@@ -25,4 +25,5 @@ urlpatterns = [
     path('limits/', include('limits.urls')),
     path('transfers/', include('transfers.urls')),
     path('trunk-zones/', include('trunk_zones.urls')),
+    path('tracks/', include('tracks.urls')),
 ]

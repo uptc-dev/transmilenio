@@ -9,16 +9,17 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('sectors', '0001_initial'),
+        ('zones', '0001_initial'),
+        ('trunk', '0001_initial'),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Zone',
+            name='Trunk_zone',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=200)),
-                ('sector', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='sectors.Sector')),
+                ('trunk', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='trunk.Trunk')),
+                ('zone', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='zones.Zone')),
             ],
         ),
     ]
