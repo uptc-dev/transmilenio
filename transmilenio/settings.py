@@ -134,5 +134,5 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_expiring_authtoken.authentication.ExpiringTokenAuthentication',
     ),
-    
+
 }

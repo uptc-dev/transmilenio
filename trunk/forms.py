@@ -1,6 +1,6 @@
 from __future__ import unicode_literals
 from django import forms
-from .models import *
+from .models import Trunk
 
 
 class TrunkForm(forms.ModelForm):
