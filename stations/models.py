@@ -2,6 +2,7 @@ from django.db import models
 
 from trunk.models import Trunk
 
+
 #   CREATE TABLE `estacion` (
 #   `nombre` varchar(100) NOT NULL,
 #   `ubication` point NOT NULL,

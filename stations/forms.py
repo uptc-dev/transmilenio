@@ -1,14 +1,15 @@
 from __future__ import unicode_literals
 from django import forms
 
-from .models import Zone
+from .models import Station
 
 
-class ZoneForm(forms.ModelForm):
+class StationForm(forms.ModelForm):
     class Meta:
-        model = Zone
+        model = Station
         fields = [
             'name',
-            'sector',
+            'latitude',
+            'longitude',
             'trunk',
         ]
