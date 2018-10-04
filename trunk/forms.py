@@ -1,12 +1,12 @@
-from rest_framework.serializers import ModelSerializer
-from .models import Trunk
+from __future__ import unicode_literals
+from django import forms
+from .models import *
 
 
-class TrunkSerializer(ModelSerializer):
+class TrunkForm(forms.ModelForm):
     class Meta:
         model = Trunk
         fields = [
-            'pk',
             'first_letter',
             'name',
             'hex_color',
