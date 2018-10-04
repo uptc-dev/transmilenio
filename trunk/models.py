@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # CREATE TABLE `troncal` (
 #   `inicial` varchar(1) NOT NULL,
 #   `nombre` varchar(100) NOT NULL,
@@ -13,5 +14,6 @@ class Trunk(models.Model):
     hex_color = models.CharField(max_length=6)
     trunk_lenght = models.DecimalField(max_digits=10, decimal_places=3)
     pre_trunk_lenght = models.DecimalField(max_digits=10, decimal_places=3)
+
     def __str__(self):
         return "({}) {}".format(self.first_letter, self.name)

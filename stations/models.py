@@ -13,3 +13,6 @@ class Station(models.Model):
     latitude = models.DecimalField(max_digits=25, decimal_places=20)
     longitude = models.DecimalField(max_digits=25, decimal_places=20)
     trunk = models.ForeignKey(Trunk, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name

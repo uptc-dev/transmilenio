@@ -12,3 +12,6 @@ class Zone(models.Model):
     name = models.CharField(max_length=200)
     sector = models.ForeignKey(Sector, on_delete=models.CASCADE)
     trunk = models.ManyToManyField(Trunk)
+
+    def __str__(self):
+        return self.name
