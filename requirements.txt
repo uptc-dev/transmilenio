@@ -1,3 +1,5 @@
 Django==2.1.2
 pytz==2018.5
-djangorestframework==3.8.2
+django-rest-auth==0.9.2
+djangorestframework==3.4.6
+djangorestframework-expiring-authtoken==0.1.4

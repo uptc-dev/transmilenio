@@ -15,7 +15,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
@@ -26,7 +25,6 @@ SECRET_KEY = '=z0%db(kcup63!cb5=yrn2^a7d8nqviu873@^k*a7zbl9c7e!n'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
 
 # Application definition
 
@@ -44,7 +42,10 @@ INSTALLED_APPS = [
     'zones.apps.ZonesConfig',
     'limits.apps.LimitsConfig',
     'transfers.apps.TransfersConfig',
-     'rest_framework',
+    'rest_framework',
+    'rest_framework.authtoken',
+    'rest_auth',
+    'rest_framework_expiring_authtoken',
 ]
 
 MIDDLEWARE = [
@@ -77,7 +78,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'transmilenio.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
@@ -87,7 +87,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
@@ -120,7 +119,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
@@ -130,7 +128,11 @@ REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': (
         'rest_framework.renderers.JSONRenderer',
     ),
-     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.DjangoModelPermissions'
-    ]
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_expiring_authtoken.authentication.ExpiringTokenAuthentication',
+    ),
+    
 }

@@ -1,6 +1,5 @@
 from rest_framework.response import Response
-from rest_framework.decorators import api_view, permission_classes
-from rest_framework import permissions
+from rest_framework.decorators import api_view
 from django.core.exceptions import ObjectDoesNotExist
 
 from .models import Trunk
@@ -9,7 +8,7 @@ from .forms import TrunkForm
 
 
 @api_view(['POST', 'GET'])
-@permission_classes((permissions.AllowAny,))
+# @permission_classes((permissions.AllowAny,))
 def trunks(request):
     if request.method == 'POST':
         form = TrunkForm(request.data)
@@ -22,7 +21,6 @@ def trunks(request):
 
 
 @api_view(['PUT', 'GET', 'DELETE'])
-@permission_classes((permissions.AllowAny,))
 def trunk(request, pk):
     try:
         data = Trunk.objects.get(pk=pk)
