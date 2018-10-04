@@ -23,9 +23,6 @@ ALTER TABLE zona ADD FOREIGN KEY (sector) REFERENCES sector(id);
 ALTER TABLE zona_troncal ADD FOREIGN KEY (troncal) REFERENCES troncal(id);
 ALTER TABLE zona_troncal ADD FOREIGN KEY (zona) REFERENCES zona(id);
 
-ALTER TABLE troncal ADD FOREIGN KEY (inicio) REFERENCES estacion(id);
-ALTER TABLE troncal ADD FOREIGN KEY (fin) REFERENCES estacion(id);
-
 ALTER TABLE estacion ADD FOREIGN KEY (troncal) REFERENCES troncal(id);
 
 ALTER TABLE transferencia ADD FOREIGN KEY (troncal) REFERENCES troncal(id);

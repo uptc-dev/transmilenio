@@ -20,10 +20,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('stations/', include('stations.urls')),
     path('sectors/', include('sectors.urls')),
-    path('trunk/', include('trunk.urls')),
+    path('troncales/', include('trunk.urls')),
     path('tracks/', include('tracks.urls')),
     path('limits/', include('limits.urls')),
     path('transfers/', include('transfers.urls')),
-    path('trunk-zones/', include('trunk_zones.urls')),
     path('tracks/', include('tracks.urls')),
 ]

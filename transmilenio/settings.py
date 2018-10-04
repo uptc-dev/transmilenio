@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'zones.apps.ZonesConfig',
     'limits.apps.LimitsConfig',
     'transfers.apps.TransfersConfig',
-    'trunk_zones.apps.TrunkZonesConfig',
+     'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -107,13 +107,12 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Bogota'
 
 USE_I18N = True
 
@@ -126,3 +125,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.JSONRenderer',
+    ),
+     'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissions'
+    ]
+}
