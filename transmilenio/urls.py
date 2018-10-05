@@ -5,10 +5,10 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('stations/', include('stations.urls')),
-    path('sectors/', include('sectors.urls')),
+    path('sectores/', include('sectors.urls')),
+    path('zonas/', include('zones.urls')),
     path('troncales/', include('trunk.urls')),
-    path('tracks/', include('tracks.urls')),
+    path('estaciones/', include('stations.urls')),
     path('limits/', include('limits.urls')),
     path('transfers/', include('transfers.urls')),
     path('tracks/', include('tracks.urls')),

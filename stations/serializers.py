@@ -11,4 +11,5 @@ class StationSerializer(ModelSerializer):
             'latitude',
             'longitude',
             'trunk',
+            'user',
         ]

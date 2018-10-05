@@ -1,0 +1,996 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Transmilenio",
+		"_postman_id": "e4db5037-1c8a-2b03-bee2-eb8e57bb62cc",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"url": "http://127.0.0.1:8000/login/",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "admin@admin.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "transmilenio123",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Crear troncal",
+			"request": {
+				"url": "http://127.0.0.1:8000/troncales/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 2b08780d295229d205e1a205035774ddfb832447",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_letter",
+							"value": "A",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Algo",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hex_color",
+							"value": "FFFFFF",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "pre_trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener troncales",
+			"request": {
+				"url": "http://127.0.0.1:8000/troncales/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 2b08780d295229d205e1a205035774ddfb832447",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_letter",
+							"value": "A",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Algo",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hex_color",
+							"value": "FFFFFF",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "pre_trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener troncal",
+			"request": {
+				"url": "http://127.0.0.1:8000/troncales/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 2b08780d295229d205e1a205035774ddfb832447",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_letter",
+							"value": "A",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Algo",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hex_color",
+							"value": "FFFFFF",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "pre_trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar troncal",
+			"request": {
+				"url": "http://127.0.0.1:8000/troncales/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 2b08780d295229d205e1a205035774ddfb832447",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_letter",
+							"value": "A",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "AlgoModifi",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hex_color",
+							"value": "FFFFFF",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "pre_trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Borrrar troncal",
+			"request": {
+				"url": "http://127.0.0.1:8000/troncales/4",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 2b08780d295229d205e1a205035774ddfb832447",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_letter",
+							"value": "A",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Algo",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hex_color",
+							"value": "FFFFFF",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "pre_trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Crear sector",
+			"request": {
+				"url": "http://127.0.0.1:8000/sectores/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 2b08780d295229d205e1a205035774ddfb832447",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Sector A",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener sectores",
+			"request": {
+				"url": "http://127.0.0.1:8000/sectores/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 2b08780d295229d205e1a205035774ddfb832447",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_letter",
+							"value": "A",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Algo",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hex_color",
+							"value": "FFFFFF",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "pre_trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener sector",
+			"request": {
+				"url": "http://127.0.0.1:8000/sectores/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 2b08780d295229d205e1a205035774ddfb832447",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_letter",
+							"value": "A",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Algo",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hex_color",
+							"value": "FFFFFF",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "pre_trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar sector",
+			"request": {
+				"url": "http://127.0.0.1:8000/sectores/2",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 2b08780d295229d205e1a205035774ddfb832447",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Sector B",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Sector borrar",
+			"request": {
+				"url": "http://127.0.0.1:8000/sectores/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 2b08780d295229d205e1a205035774ddfb832447",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_letter",
+							"value": "A",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Algo",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hex_color",
+							"value": "FFFFFF",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "pre_trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Zona crear",
+			"request": {
+				"url": "http://127.0.0.1:8000/zonas/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 2b08780d295229d205e1a205035774ddfb832447",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Zona A",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "sector",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "trunk",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Zonas obtener",
+			"request": {
+				"url": "http://127.0.0.1:8000/zonas/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 2b08780d295229d205e1a205035774ddfb832447",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_letter",
+							"value": "A",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Algo",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hex_color",
+							"value": "FFFFFF",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "pre_trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Zona obtener",
+			"request": {
+				"url": "http://127.0.0.1:8000/zonas/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 2b08780d295229d205e1a205035774ddfb832447",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_letter",
+							"value": "A",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Algo",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hex_color",
+							"value": "FFFFFF",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "pre_trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Zona actulizar",
+			"request": {
+				"url": "http://127.0.0.1:8000/zonas/2",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 2b08780d295229d205e1a205035774ddfb832447",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Zona A",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "sector",
+							"value": "1",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "trunk",
+							"value": "1",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "trunk",
+							"value": "2",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Zona borrar",
+			"request": {
+				"url": "http://127.0.0.1:8000/sectores/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 2b08780d295229d205e1a205035774ddfb832447",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_letter",
+							"value": "A",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Algo",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hex_color",
+							"value": "FFFFFF",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "pre_trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Estacion crear",
+			"request": {
+				"url": "http://127.0.0.1:8000/estaciones/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 2b08780d295229d205e1a205035774ddfb832447",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Estacion A",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "12.22",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "13.22",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "trunk",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Estaciones obtener",
+			"request": {
+				"url": "http://127.0.0.1:8000/estaciones/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 2b08780d295229d205e1a205035774ddfb832447",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_letter",
+							"value": "A",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Algo",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hex_color",
+							"value": "FFFFFF",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "pre_trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Estacion obtener",
+			"request": {
+				"url": "http://127.0.0.1:8000/estaciones/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 2b08780d295229d205e1a205035774ddfb832447",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_letter",
+							"value": "A",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Algo",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hex_color",
+							"value": "FFFFFF",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "pre_trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Estacion actulizar",
+			"request": {
+				"url": "http://127.0.0.1:8000/estaciones/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 2b08780d295229d205e1a205035774ddfb832447",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Estacion A",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "15.22222",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "12.22",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "trunk",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Estacion borrar",
+			"request": {
+				"url": "http://127.0.0.1:8000/estaciones/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 2b08780d295229d205e1a205035774ddfb832447",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_letter",
+							"value": "A",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Algo",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hex_color",
+							"value": "FFFFFF",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "pre_trunk_lenght",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

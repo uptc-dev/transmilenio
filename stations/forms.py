@@ -12,4 +12,5 @@ class StationForm(forms.ModelForm):
             'latitude',
             'longitude',
             'trunk',
+            'user',
         ]
